@@ -1,0 +1,6 @@
+[ 2024-10-25 12:18:03,505 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-25 12:18:03,509 ] 96 werkzeug - INFO -  * Debugger PIN: 141-539-961
+[ 2024-10-25 12:18:13,461 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 12:18:13] "GET /predict HTTP/1.1" 200 -
+[ 2024-10-25 12:22:43,827 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 12:22:43,828 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 12:22:44,028 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 12:22:44] "POST /predict HTTP/1.1" 200 -

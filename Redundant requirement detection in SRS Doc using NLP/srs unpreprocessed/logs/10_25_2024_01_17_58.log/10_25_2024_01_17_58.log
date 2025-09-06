@@ -1,0 +1,16 @@
+[ 2024-10-25 01:17:58,799 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-25 01:17:58,800 ] 96 werkzeug - INFO -  * Debugger PIN: 113-983-088
+[ 2024-10-25 01:18:03,543 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 01:18:03,543 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 01:18:03,608 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:03] "POST /predict HTTP/1.1" 200 -
+[ 2024-10-25 01:18:15,743 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 01:18:15,743 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 01:18:15,749 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:15] "POST /predict HTTP/1.1" 200 -
+[ 2024-10-25 01:18:41,699 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 01:18:41,699 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 01:18:41,702 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:41] "POST /predict HTTP/1.1" 200 -
+[ 2024-10-25 01:18:42,063 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2024-10-25 01:18:42,133 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-10-25 01:18:42,141 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-10-25 01:18:42,149 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-10-25 01:18:42,160 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 01:18:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

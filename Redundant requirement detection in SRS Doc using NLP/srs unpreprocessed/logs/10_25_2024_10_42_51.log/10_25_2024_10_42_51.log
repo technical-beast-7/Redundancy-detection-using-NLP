@@ -1,0 +1,11 @@
+[ 2024-10-25 10:42:52,876 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-25 10:42:52,881 ] 96 werkzeug - INFO -  * Debugger PIN: 141-539-961
+[ 2024-10-25 10:43:04,271 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 10:43:04] "GET / HTTP/1.1" 200 -
+[ 2024-10-25 10:43:12,581 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 10:43:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-10-25 10:43:16,293 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 10:43:16] "GET /predict HTTP/1.1" 200 -
+[ 2024-10-25 10:43:33,977 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 10:43:33,978 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 10:43:34,334 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 10:43:34] "POST /predict HTTP/1.1" 200 -
+[ 2024-10-25 10:43:53,907 ] 66 root - INFO - DataFrame Gathered
+[ 2024-10-25 10:43:53,908 ] 13 root - INFO - Prediction Pipeline Started
+[ 2024-10-25 10:43:53,920 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 10:43:53] "POST /predict HTTP/1.1" 200 -
