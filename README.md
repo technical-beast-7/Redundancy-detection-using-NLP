@@ -52,8 +52,8 @@ To set up and run this project locally, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd Redundancy-detection-using-NLP-main/Redundant requirement detection in SRS Doc using NLP/srs unpreprocessed
+git clone https://github.com/technical-beast-7/Redundancy-detection-using-NLP
+cd Redundancy-detection-using-NLP
 ```
 
 ### 2. Create a Virtual Environment
@@ -115,7 +115,6 @@ Follow the instructions on the web page to upload your SRS document and initiate
 ## Project Structure
 
 ```
-.gitignore                # Specifies intentionally untracked files to ignore
 LICENSE                   # Project license information
 README.md                 # This file
 application.py            # Main Flask application entry point
