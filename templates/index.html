@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redundant Software Requirements Detector</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fafb;
+            padding: 30px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #444;
+            font-weight: 500;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 20px;
+            color: #d9534f;
+            text-align: center;
+        }
+        .welcome-message {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .app-description {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redundant Software Requirements Detector</h1>
+        
+        <p class="welcome-message">Welcome to the Redundant Software Requirements Detector!<br>Upload your NFR files, and we'll help you identify redundant requirements.</p>
+        
+        <p class="app-description">
+            This tool allows you to upload multiple NFR text files and analyze them for redundancy.<br>
+            We will compare the requirements to find similar entries, helping you improve your project documentation and avoid unnecessary repetitions.
+        </p>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <label for="nfr_file">Select one or more NFR text files to upload:</label>
+            <input type="file" name="nfr_file" id="nfr_file" multiple required>
+            <button type="submit">Upload & Process</button>
+        </form>
+
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

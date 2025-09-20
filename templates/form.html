@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFR Similarity Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fafb;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr.has-similar {
+            background-color: #fffce0 !important;
+        }
+
+        .back-btn, .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-btn:hover, .download-btn:hover {
+            background-color: #45a049;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                display: none;
+            }
+
+            td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: bold;
+                color: #666;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Detected Similar NFR Requirements</h2>
+
+        {% if results %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Requirement</th>
+                    <th>Similar Requirements</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                <tr class="{{ 'has-similar' if row.SimilarRequirement }}">
+                    <td data-label="Class">{{ row.class }}</td>
+                    <td data-label="Requirement">{{ row.requirement }}</td>
+                    <td data-label="Similar Requirements">{{ row.SimilarRequirement or 'None' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No results to display.</p>
+        {% endif %}
+
+        {% if similar_count is not none %}
+        <p class="summary">Total similar requirement entries detected: {{ similar_count }}</p>
+        {% endif %}
+
+        <a class="back-btn" href="/">← Upload Another File</a>
+        <!-- Optional: You can implement download functionality and link it below -->
+        <!-- <a class="download-btn" href="/download-results">⬇ Download Results</a> -->
+    </div>
+</body>
+</html>
