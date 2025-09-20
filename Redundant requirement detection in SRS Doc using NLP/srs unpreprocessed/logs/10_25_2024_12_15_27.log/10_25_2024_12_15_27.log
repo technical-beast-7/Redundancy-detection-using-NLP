@@ -1,3 +1,0 @@
-[ 2024-10-25 12:15:28,754 ] 96 werkzeug - WARNING -  * Debugger is active!
-[ 2024-10-25 12:15:28,757 ] 96 werkzeug - INFO -  * Debugger PIN: 141-539-961
-[ 2024-10-25 12:17:05,668 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 12:17:05] "GET / HTTP/1.1" 200 -
